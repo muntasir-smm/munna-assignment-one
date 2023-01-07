@@ -38,9 +38,16 @@ header .title{
 /* Botton Style */
 .btn-main{
     color: #005FFF;
-    height: 40px;
+    height: 65px;
+    width: 170px;
     border: none;
     border-radius: 5px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .my-failures{
@@ -112,7 +119,10 @@ ul{
     justify-content: right;
     gap: 90px;
   }
-
+.bottom{
+    display: flex;
+    justify-content: center;
+}
   .bottom-banner{
     background-image: url(../images/gradient1.png), url(../images/watch.png);
     background-repeat: no-repeat;
@@ -121,12 +131,26 @@ ul{
     border: none;
     border-radius: 5px;
     color: #ffffff;
+    margin: 100px 250px;
+    padding: 40px 615px 40px 65px;
   }
+.bottom-banner-title{
+    width: 450px;
+    height: 80px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+
+    padding-bottom: 30px;
+}
+
 .footer{
     color: #ffffff;
     background-color: #000000;
     display: flex;
-    gap: 200px;
+    gap: 330px;
     padding: 100px;
     justify-content: center;
 }
