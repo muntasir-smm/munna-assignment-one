@@ -1,20 +1,42 @@
 *{
     margin: 0px;
 }
+body{
+    background: #FFFFFF;
+}
 /* Header Style */
 header{
-    background-image: url(/images/banner/banner3.png);
-    background-size: cover;
+    background-image: url("/images/banner/banner3.png");
     color: #ffffff;
     text-align: right;
 }
+header .title{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 76px;
+    text-align: right;
+    padding-bottom: 25px;
+}
+
+.title-description{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
 .banner{
-    padding:100px 100px 100px 0px;
+    padding:100px 100px 100px 100px;
 }
 
 /* Botton Style */
 .btn-main{
-    color: blue;
+    color: #005FAC;
     height: 40px;
     border: none;
     border-radius: 5px;
@@ -22,8 +44,12 @@ header{
 
 .my-failures{
     display: flex;
+    justify-content: center;
 }
-
+.my-plan{
+    position:relative;
+    position:;
+}
 ul {
     list-style-image: url("/images/icons/check-mark.png");
   }
@@ -35,7 +61,7 @@ ul {
 
   .bottom-banner{
     background-image: url("/images/gradient1.png"), url("/images/watch.png");
-    background-size: cover;
+    background-size: 100% 100%;
     margin: 20px 100px;
     border: none;
     border-radius: 5px;
@@ -45,8 +71,9 @@ ul {
     color: #ffffff;
     background-color: #000000;
     display: flex;
-    gap: 50px;
+    gap: 200px;
     padding: 100px;
+    justify-content: center;
 }
   .icon{
     display: flex;
