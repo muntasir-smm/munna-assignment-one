@@ -7,6 +7,7 @@ body{
 /* Header Style */
 header{
     background-image: url("/images/banner/banner3.png");
+    background-repeat: no-repeat;
     color: #ffffff;
     text-align: right;
 }
@@ -31,12 +32,12 @@ header .title{
     padding-bottom: 30px;
 }
 .banner{
-    padding:100px 100px 100px 100px;
+    padding: 216px 230px 165px 850px;
 }
 
 /* Botton Style */
 .btn-main{
-    color: #005FAC;
+    color: #005FFF;
     height: 40px;
     border: none;
     border-radius: 5px;
@@ -44,13 +45,57 @@ header .title{
 
 .my-failures{
     display: flex;
+    gap: 100px;
     justify-content: center;
+    /* padding: 130px 320px 130px 200px; */
 }
+.my-failures-blog{
+    padding: 370px 320px 220px 0px;
+}
+.failure-title{
+    width: 288px;
+    height: 94px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+    padding-bottom: 30px;
+}
+.failure-description{
+    width: 416px;
+    height: 104px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+}
+.failure{
+    width: 570px;
+    height: 720px;
+    padding: 130px 0px 130px 210px;
+}
+
+.blog{
+    padding: 0px 200px 20px 200px;
+    text-align: center;
+}
+/* My Plans */
 .my-plan{
-    position:relative;
-    position:;
+
 }
-ul {
+.my-plan-title{
+    width: 179px;
+    height: 47px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+}
+ul{
     list-style-image: url("/images/icons/check-mark.png");
   }
 
@@ -61,6 +106,7 @@ ul {
 
   .bottom-banner{
     background-image: url("/images/gradient1.png"), url("/images/watch.png");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 20px 100px;
     border: none;
