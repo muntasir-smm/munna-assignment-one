@@ -6,7 +6,7 @@ body{
 }
 /* Header Style */
 header{
-    background-image: url("/images/banner/banner3.png");
+    background-image: url(../images/banner/banner3.png);
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: right;
@@ -71,6 +71,11 @@ header .title{
     font-size: 16px;
     text-align: justify;
 }
+
+ul{
+    list-style-image: url(../images/icons/check-mark.png);
+  }
+
 .failure{
     width: 570px;
     height: 720px;
@@ -78,34 +83,38 @@ header .title{
 }
 
 .blog{
-    padding: 0px 200px 20px 200px;
+    /* padding: 0px 200px 20px 200px; */
+    display: flex;
+    justify-content:center;
+    align-content: center;
     text-align: center;
 }
 /* My Plans */
 .my-plan{
+    text-align: center;
 
 }
 .my-plan-title{
-    width: 179px;
-    height: 47px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-bottom: 50px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     color: #000000;
-    text-align: center;
 }
-ul{
-    list-style-image: url("/images/icons/check-mark.png");
-  }
+
 
 .plans{
     display: flex;
-    gap: 25px;
+    justify-content: right;
+    gap: 90px;
   }
 
   .bottom-banner{
-    background-image: url("/images/gradient1.png"), url("/images/watch.png");
+    background-image: url(../images/gradient1.png), url(../images/watch.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 20px 100px;
