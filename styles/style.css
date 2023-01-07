@@ -88,7 +88,6 @@ ul{
 /* My Plans */
 .my-plan{
     text-align: center;
-
 }
 .my-plan-title{
     display: flex;
@@ -100,12 +99,15 @@ ul{
     color: #000000;
 }
 
-
 .plans{
     display: flex;
     justify-content: right;
     gap: 90px;
   }
+.plans p{
+    color: gray;
+}
+
 .bottom{
     display: flex;
     justify-content: center;
@@ -140,18 +142,40 @@ ul{
     padding: 100px 200px;
     justify-content: center;
 }
-  .icon{
-    display: flex;
-    gap: 20px;
-    padding: 20px 0px;
-  }
 
+.future{
+
+}
+
+.future-title{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.future-description, .future-email, .future-phone{
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.icon{
+    display: flex;
+    gap: 15px;
+  }
+  .icon img{
+    width: 40px;
+    height: 40px;
+    border: 2px dotted #FF0000;
+    border-radius: 50%;
+  }
 .subscribe-title{
     font-weight: 600;
     font-size: 40px;
-    line-height: 29px;
     color: #FFFFFF;
 }
+
   .email{
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
