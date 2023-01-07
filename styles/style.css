@@ -69,7 +69,7 @@ header .title{
     text-align: justify;
 }
 
-ul{
+.my-failures ul{
     list-style-image: url(../images/icons/check-mark.png);
   }
 
