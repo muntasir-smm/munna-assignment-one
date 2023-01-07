@@ -1,9 +1,7 @@
 *{
     margin: 0px;
 }
-body{
-    background: #FFFFFF;
-}
+
 /* Header Style */
 header{
     background-image: url(../images/banner/banner3.png);
@@ -32,7 +30,7 @@ header .title{
     padding: 216px 230px 165px 850px;
 }
 
-/* Botton Style */
+/* Contuct Us & Call Now Botton Style */
 .btn-main{
     color: #005FFF;
     height: 65px;
@@ -43,13 +41,13 @@ header .title{
     font-size: 25px;
     line-height: 23px;
 }
-
+/* Styles on 'My failures of previous year' Section */
 .my-failures{
     display: flex;
     gap: 100px;
     justify-content: center;
-    /* padding: 130px 320px 130px 200px; */
 }
+
 .my-failures-blog{
     padding: 370px 320px 220px 0px;
 }
@@ -79,13 +77,13 @@ header .title{
     padding: 130px 0px 130px 210px;
 }
 
-.blog{
-    /* padding: 0px 200px 20px 200px; */
+.future-plan{
     display: flex;
     justify-content:center;
     align-content: center;
     text-align: center;
 }
+
 /* My Plans */
 .my-plan{
     text-align: center;
