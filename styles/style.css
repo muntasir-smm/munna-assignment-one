@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+}
+/* Header Style */
+header{
+    background-image: url(/images/banner/banner3.png);
+    background-size: cover;
+    color: #ffffff;
+    text-align: right;
+}
+.banner{
+    padding:100px 100px 100px 0px;
+}
+
+/* Botton Style */
+.btn-main{
+    color: blue;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.my-failures{
+    display: flex;
+}
+
+ul {
+    list-style-image: url("/images/icons/check-mark.png");
+  }
+
+.plans{
+    display: flex;
+    gap: 25px;
+  }
+
+  .bottom-banner{
+    background-image: url("/images/gradient1.png"), url("/images/watch.png");
+    background-size: cover;
+    margin: 20px 100px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+.footer{
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    gap: 50px;
+    padding: 100px;
+}
+  .icon{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .btn-subscribe{
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: blue;
+  }
