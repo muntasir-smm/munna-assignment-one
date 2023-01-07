@@ -30,7 +30,7 @@ header .title{
     padding: 216px 230px 165px 850px;
 }
 
-/* Contuct Us & Call Now Botton Style */
+/* Contact Us & Call Now Botton Style */
 .btn-main{
     color: #005FFF;
     height: 65px;
@@ -100,7 +100,7 @@ header .title{
 
 .plans{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     gap: 90px;
   }
 .plans p{
@@ -142,9 +142,6 @@ header .title{
     justify-content: center;
 }
 
-.future{
-
-}
 
 .future-title{
     font-weight: 700;
