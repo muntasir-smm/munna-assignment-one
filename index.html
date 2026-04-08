@@ -7,44 +7,118 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <title>First Assignment | Believe & Achieve</title>
+    <meta
+      name="description"
+      content="Professional portfolio showcasing personal development journey, goals, and achievements. Contact us for web development services."
+    />
+    <meta
+      name="keywords"
+      content="web development, portfolio, personal growth, programming, JavaScript"
+    />
+    <meta name="author" content="Muntasir SMM" />
+    <meta name="robots" content="index, follow" />
+
+    <title>First Assignment | Believe & Achieve - Professional Portfolio</title>
+
+    <!-- Favicon Integration -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#005fff" />
+    <meta name="theme-color" content="#005fff" />
 
     <!-- Preconnect for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Google Fonts for modern typography -->
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/nav.css" />
   </head>
   <body>
+    <!-- Loading Spinner -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
     <header>
       <div class="banner">
-        <div class="banner-content">
+        <div
+          class="banner-content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="badge">Welcome to my portfolio</div>
           <h1 class="title">
             All Thinks Are <br />
             Possible If You <br />
             believe
           </h1>
           <p class="title-description">
-            There are many variations of passages of Lorem Ipsum <br />
-            available, but the majority have suffered alteration in some <br />
-            form, by injected humour, or randomised words.
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words.
           </p>
-          <button class="btn-main" aria-label="Contact us">Contact Us</button>
+          <div class="button-group">
+            <button class="btn-main" aria-label="Contact us">
+              Contact Us <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn-outline" aria-label="Learn more">
+              Learn More <i class="fas fa-play"></i>
+            </button>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- EXTRA SECTION: Modern Dropdown Menu with hover effects -->
+      <!-- EXTRA SECTION: Advanced Dropdown Menu -->
       <section class="extra-section">
         <nav class="main-nav" aria-label="Main navigation">
           <div class="nav-container">
+            <div class="logo">
+              <img
+                src="./favicon/android-chrome-192x192.png"
+                alt="Logo"
+                class="nav-logo"
+              />
+              <span class="logo-text">Portfolio</span>
+            </div>
             <div class="menu-icon-wrapper">
               <img
                 class="menu-icon"
@@ -55,25 +129,26 @@
             </div>
             <ul class="nav-menu">
               <li class="nav-item">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="nav-item dropdown-parent">
-                <a href="#">Gallery</a>
+                <a href="#">Gallery <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-item">
-                    <a href="#">Pictures</a>
+                    <a href="#">Pictures <i class="fas fa-image"></i></a>
                     <ul class="sub-dropdown">
                       <li>
                         <img
                           src="images/banner/banner1.png"
                           alt="Gallery preview"
                           class="dropdown-img"
+                          loading="lazy"
                         />
                       </li>
                     </ul>
                   </li>
                   <li class="dropdown-item">
-                    <a href="#">Videos</a>
+                    <a href="#">Videos <i class="fas fa-video"></i></a>
                     <ul class="sub-dropdown video-dropdown">
                       <li>
                         <iframe
@@ -92,144 +167,234 @@
                             web-share;
                           "
                           allowfullscreen
+                          loading="lazy"
                         ></iframe>
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown-item"><a href="#">About Us</a></li>
+                  <li class="dropdown-item">
+                    <a href="#about">About Us <i class="fas fa-users"></i></a>
+                  </li>
                 </ul>
               </li>
+              <li class="nav-item"><a href="#plans">Plans</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-search">
+              <i class="fas fa-search"></i>
+            </div>
           </div>
         </nav>
       </section>
 
-      <!-- My failures of previous year section - enhanced layout -->
-      <section class="my-failures">
-        <div class="failure-image">
-          <img
-            src="images/person.png"
-            alt="Person reflecting on past failures"
-            class="failure-pic"
-          />
+      <!-- My failures of previous year section -->
+      <section class="my-failures" id="about">
+        <div
+          class="failure-image"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="image-wrapper">
+            <img
+              src="images/person.png"
+              alt="Person reflecting on past failures"
+              class="failure-pic"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <div class="my-failures-blog">
-          <h1 class="failure-title">
-            My failures of <br />
-            previous year
-          </h1>
+        <div
+          class="my-failures-blog"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <div class="section-badge">Lessons Learned</div>
+          <h1 class="failure-title">My failures of previous year</h1>
           <p class="failure-description">
-            Contrary to popular belief, Lorem Ipsum is not <br />
-            simply random text. It has roots in a piece of <br />
-            classical Latin literature from 45 BC, making it over <br />
-            2000 years old. Richard McClintock.
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock.
           </p>
           <div class="failure-list">
             <ul>
-              <li>Contrary to popular belief, is not simply.</li>
-              <li>Contrary to popular belief.</li>
-              <li>Contrary to popular , is not simply.</li>
-              <li>Contrary to popular belief, is not simply.</li>
-              <li>Contrary to popular simply.</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Contrary to popular belief,
+                is not simply.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Contrary to popular belief.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Contrary to popular , is not
+                simply.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Contrary to popular belief,
+                is not simply.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Contrary to popular simply.
+              </li>
             </ul>
           </div>
+          <div class="progress-stats">
+            <div class="stat">
+              <span class="stat-number">85%</span>
+              <span class="stat-label">Growth Rate</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Hours</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- My Plan Section - refined spacing and card style -->
-      <section class="future-plan">
+      <!-- My Plan Section -->
+      <section class="future-plan" id="plans">
         <div class="my-plan">
-          <div class="my-plan-title">
+          <div class="my-plan-title" data-aos="fade-up" data-aos-duration="800">
+            <div class="section-badge">What's Next?</div>
             <h1>My Plans</h1>
+            <div class="title-underline"></div>
           </div>
           <div class="plans">
-            <div class="plan-card">
-              <img src="images/icons/web.png" alt="Web Development icon" />
+            <div
+              class="plan-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              <div class="card-icon">
+                <img src="images/icons/web.png" alt="Web Development icon" />
+              </div>
               <h3>Web Development</h3>
               <p>I want to start</p>
+              <div class="card-hover-effect"></div>
             </div>
-            <div class="plan-card">
-              <img src="images/icons/js.png" alt="JavaScript icon" />
+            <div
+              class="plan-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div class="card-icon">
+                <img src="images/icons/js.png" alt="JavaScript icon" />
+              </div>
               <h3>JavaScript</h3>
               <p>I want to learn</p>
+              <div class="card-hover-effect"></div>
             </div>
-            <div class="plan-card">
-              <img src="images/icons/smoke.png" alt="Smoking habit icon" />
+            <div
+              class="plan-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            >
+              <div class="card-icon">
+                <img src="images/icons/smoke.png" alt="Smoking habit icon" />
+              </div>
               <h3>Smoking Habit</h3>
               <p>I want to end</p>
+              <div class="card-hover-effect"></div>
             </div>
-            <div class="plan-card">
-              <img src="images/icons/ecom.png" alt="E-commerce icon" />
+            <div
+              class="plan-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            >
+              <div class="card-icon">
+                <img src="images/icons/ecom.png" alt="E-commerce icon" />
+              </div>
               <h3>E-commerce</h3>
               <p>I want to develop</p>
+              <div class="card-hover-effect"></div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Bottom Banner with Gradient and Image Blend -->
+      <!-- Bottom Banner -->
       <section class="bottom">
-        <div class="bottom-banner">
-          <h1 class="bottom-banner-title">
-            Always keep a positive <br />
-            mindset
-          </h1>
+        <div class="bottom-banner" data-aos="zoom-in" data-aos-duration="1000">
+          <h1 class="bottom-banner-title">Always keep a positive mindset</h1>
           <button class="btn-main btn-call" aria-label="Call now">
-            Call Now
+            Call Now <i class="fas fa-phone-alt"></i>
           </button>
         </div>
       </section>
     </main>
 
-    <!-- Footer section - fully responsive -->
-    <footer>
+    <!-- Footer section -->
+    <footer id="contact">
       <div class="footer">
-        <div class="future">
+        <div class="future" data-aos="fade-right" data-aos-duration="800">
           <h1 class="future-title">Future</h1>
           <p class="future-description">
-            There are many variations of passages of Lorem Ipsum <br />
-            available, but the majority have suffered alteration in some <br />
-            form, by injected humour, or randomised words.
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words.
           </p>
-          <p class="future-email">Email: munna112ru@gmail.com</p>
-          <p class="future-phone">Phone: 01234567890</p>
+          <p class="future-email">
+            <i class="fas fa-envelope"></i> Email: munna112ru@gmail.com
+          </p>
+          <p class="future-phone">
+            <i class="fas fa-phone"></i> Phone: 01234567890
+          </p>
 
-          <!-- Social media icons with profile links -->
           <div class="icon">
             <a
               href="https://www.facebook.com/muntasir.smm"
               target="_blank"
               aria-label="Facebook"
             >
-              <img src="images/icons/fb.png" alt="Facebook" />
+              <i class="fab fa-facebook-f"></i>
             </a>
             <a
               href="https://www.instagram.com/muntasir_smm/"
               target="_blank"
               aria-label="Instagram"
             >
-              <img src="images/icons/instagram.png" alt="Instagram" />
+              <i class="fab fa-instagram"></i>
             </a>
             <a
               href="https://twitter.com/muntasir_smm"
               target="_blank"
               aria-label="Twitter"
             >
-              <img src="images/icons/twitter.png" alt="Twitter" />
+              <i class="fab fa-twitter"></i>
             </a>
             <a
               href="https://www.youtube.com/@munna_creation"
               target="_blank"
               aria-label="YouTube"
             >
-              <img src="images/icons/youtube.png" alt="Youtube" />
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://github.com/muntasir-smm"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
-        <div class="subscribe-section">
+        <div
+          class="subscribe-section"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <h1 class="subscribe-title">Subscribe</h1>
-          <form action="#" method="post">
-            <div>
+          <p class="subscribe-text">Get weekly updates and exclusive content</p>
+          <form action="#" method="post" id="subscribeForm">
+            <div class="input-group">
               <input
                 class="email"
                 type="email"
@@ -237,13 +402,101 @@
                 placeholder="Enter your email"
                 required
               />
+              <i class="fas fa-envelope input-icon"></i>
             </div>
             <div>
-              <button class="btn-subscribe" type="submit">Subscribe</button>
+              <button class="btn-subscribe" type="submit">
+                Subscribe <i class="fas fa-paper-plane"></i>
+              </button>
             </div>
           </form>
+          <div class="newsletter-success" style="display: none">
+            <i class="fas fa-check-circle"></i> Subscribed successfully!
+          </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Muntasir SMM. All rights reserved. | Designed with
+          <i class="fas fa-heart"></i> for excellence
+        </p>
+      </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        once: true,
+        offset: 100,
+      });
+
+      // Loading spinner
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader-wrapper");
+        setTimeout(() => {
+          loader.style.opacity = "0";
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 500);
+        }, 500);
+      });
+
+      // Back to top button
+      const backToTop = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add("show");
+        } else {
+          backToTop.classList.remove("show");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Newsletter form submission
+      document
+        .getElementById("subscribeForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = this.querySelector(".email").value;
+          if (email) {
+            const successMsg = document.querySelector(".newsletter-success");
+            successMsg.style.display = "block";
+            this.reset();
+            setTimeout(() => {
+              successMsg.style.display = "none";
+            }, 3000);
+          }
+        });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // Add scroll reveal for elements
+      const revealElements = document.querySelectorAll(".plan-card, .stat");
+      const revealOnScroll = () => {
+        revealElements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          if (rect.top < windowHeight - 100) {
+            el.classList.add("revealed");
+          }
+        });
+      };
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+    </script>
   </body>
 </html>
