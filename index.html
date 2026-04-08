@@ -2,25 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
     <meta
       name="description"
-      content="Professional portfolio showcasing personal development journey, goals, and achievements. Contact us for web development services."
-    />
-    <meta
-      name="keywords"
-      content="web development, portfolio, personal growth, programming, JavaScript"
+      content="Professional portfolio showcasing personal development journey, goals, and achievements."
     />
     <meta name="author" content="Muntasir SMM" />
-    <meta name="robots" content="index, follow" />
-
     <title>First Assignment | Believe & Achieve - Professional Portfolio</title>
 
-    <!-- Favicon Integration -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -43,62 +35,252 @@
     <meta name="msapplication-TileColor" content="#005fff" />
     <meta name="theme-color" content="#005fff" />
 
-    <!-- Preconnect for faster loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/nav.css" />
   </head>
-  <body>
-    <!-- Loading Spinner -->
-    <div class="loader-wrapper">
-      <div class="loader"></div>
-    </div>
+  <body class="bg-white text-gray-800 antialiased overflow-x-hidden">
+    <section class="relative z-50 bg-white shadow-md border-b border-gray-100">
+      <nav class="main-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="flex justify-between items-center py-4">
+            <div class="flex items-center gap-2">
+              <img
+                src="./favicon/android-chrome-192x192.png"
+                alt="Logo"
+                class="w-10 h-10 rounded-lg"
+              />
+              <span
+                class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
+                >Portfolio</span
+              >
+            </div>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
-      <i class="fas fa-arrow-up"></i>
+            <div class="hidden md:flex items-center space-x-8">
+              <ul class="flex space-x-8">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-gray-700 hover:text-blue-600 font-medium transition"
+                    >Home</a
+                  >
+                </li>
+                <li class="relative group">
+                  <a
+                    href="#"
+                    class="flex items-center gap-1 text-gray-700 hover:text-blue-600 font-medium transition"
+                    >Gallery <i class="fas fa-chevron-down text-xs"></i
+                  ></a>
+                  <ul
+                    class="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-gray-100"
+                  >
+                    <li class="relative group/sub">
+                      <a
+                        href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-t-xl"
+                        >Pictures <i class="fas fa-image ml-2"></i
+                      ></a>
+                      <ul
+                        class="absolute top-0 right-full mr-2 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200"
+                      >
+                        <li class="p-3">
+                          <img
+                            src="images/banner/banner1.png"
+                            alt="Gallery preview"
+                            class="rounded-lg w-full h-auto object-cover shadow-sm"
+                            loading="lazy"
+                          />
+                          <p class="text-xs text-gray-500 mt-2 text-center">
+                            Sample Image
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="relative group/sub">
+                      <a
+                        href="#"
+                        class="flex justify-between items-center px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-b-xl"
+                        >Videos <i class="fas fa-video ml-2"></i
+                      ></a>
+                      <ul
+                        class="absolute top-0 right-full mr-2 w-80 bg-white shadow-xl rounded-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-200"
+                      >
+                        <li class="p-3">
+                          <iframe
+                            width="280"
+                            height="157"
+                            src="https://www.youtube.com/embed/ZE58Vt3B3-s"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="
+                              accelerometer;
+                              autoplay;
+                              clipboard-write;
+                              encrypted-media;
+                              gyroscope;
+                              picture-in-picture;
+                              web-share;
+                            "
+                            allowfullscreen
+                            loading="lazy"
+                            class="rounded-lg w-full"
+                          ></iframe>
+                          <p class="text-xs text-gray-500 mt-2 text-center">
+                            Watch Video
+                          </p>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#plans"
+                    class="text-gray-700 hover:text-blue-600 font-medium transition"
+                    >Plans</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-gray-700 hover:text-blue-600 font-medium transition"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="md:hidden flex items-center gap-2 cursor-pointer"
+              id="mobileMenuBtn"
+            >
+              <img
+                class="w-7 h-7"
+                src="images/icons/menu.png"
+                alt="Menu icon"
+              />
+              <span class="text-sm font-semibold text-gray-600">MENU</span>
+            </div>
+          </div>
+
+          <div
+            id="mobileNavMenu"
+            class="hidden md:hidden flex-col pb-4 space-y-3 bg-white border-t border-gray-100"
+          >
+            <a
+              href="#home"
+              class="block px-2 py-2 text-gray-700 hover:bg-blue-50 rounded-lg"
+              >Home</a
+            >
+            <div class="relative">
+              <button
+                id="mobileGalleryBtn"
+                class="flex justify-between w-full px-2 py-2 text-gray-700 hover:bg-blue-50 rounded-lg"
+              >
+                Gallery <i class="fas fa-chevron-down"></i>
+              </button>
+              <div id="mobileGallerySub" class="hidden pl-4 space-y-2 mt-1">
+                <div class="text-sm text-gray-500">Pictures preview:</div>
+                <img
+                  src="images/banner/banner1.png"
+                  class="rounded-lg w-full max-w-[200px]"
+                  alt="preview"
+                />
+                <div class="text-sm text-gray-500 mt-2">Video:</div>
+                <iframe
+                  width="100%"
+                  height="140"
+                  src="https://www.youtube.com/embed/ZE58Vt3B3-s"
+                  title="YouTube"
+                  frameborder="0"
+                  allowfullscreen
+                  loading="lazy"
+                  class="rounded-lg"
+                ></iframe>
+              </div>
+            </div>
+            <a
+              href="#plans"
+              class="block px-2 py-2 text-gray-700 hover:bg-blue-50 rounded-lg"
+              >Plans</a
+            >
+            <a
+              href="#contact"
+              class="block px-2 py-2 text-gray-700 hover:bg-blue-50 rounded-lg"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <button
+      id="backToTop"
+      class="back-to-top fixed bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition-all duration-300 z-40 opacity-0 invisible w-10 h-10 sm:w-12 sm:h-12 bottom-4 sm:bottom-6 right-4 sm:right-6 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+      style="
+        bottom: max(1rem, env(safe-area-inset-bottom));
+        right: max(1rem, env(safe-area-inset-right));
+      "
+      aria-label="Back to top"
+    >
+      <i class="fas fa-arrow-up text-sm sm:text-base"></i>
     </button>
 
-    <header>
-      <div class="banner">
+    <header
+      id="home"
+      class="relative w-full bg-cover bg-center bg-no-repeat"
+      style="
+        background-image:
+          linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.3) 100%
+          ),
+          url(&quot;images/banner/banner3.png&quot;);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 md:py-36">
         <div
-          class="banner-content"
+          class="max-w-2xl ml-auto text-right"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          <div class="badge">Welcome to my portfolio</div>
-          <h1 class="title">
+          <span
+            class="inline-block bg-blue-500/20 backdrop-blur-sm text-blue-100 text-sm font-semibold px-4 py-1 rounded-full mb-4"
+            >Welcome to my portfolio</span
+          >
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-white leading-tight"
+          >
             All Thinks Are <br />
             Possible If You <br />
             believe
           </h1>
-          <p class="title-description">
+          <p class="text-gray-200 mt-6 text-lg max-w-lg ml-auto">
             There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words.
+            the majority have suffered alteration in some form.
           </p>
-          <div class="button-group">
-            <button class="btn-main" aria-label="Contact us">
+          <div class="flex flex-wrap gap-4 justify-end mt-8">
+            <button
+              id="contactUsBtn"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition flex items-center gap-2"
+            >
               Contact Us <i class="fas fa-arrow-right"></i>
             </button>
-            <button class="btn-outline" aria-label="Learn more">
+            <button
+              id="learnMoreBtn"
+              class="border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold py-3 px-8 rounded-full transition flex items-center gap-2"
+            >
               Learn More <i class="fas fa-play"></i>
             </button>
           </div>
@@ -107,396 +289,294 @@
     </header>
 
     <main>
-      <!-- EXTRA SECTION: Advanced Dropdown Menu -->
-      <section class="extra-section">
-        <nav class="main-nav" aria-label="Main navigation">
-          <div class="nav-container">
-            <div class="logo">
+      <section class="py-20 px-6 lg:px-8 max-w-7xl mx-auto" id="about">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="flex-1" data-aos="fade-right" data-aos-duration="1000">
+            <div class="relative">
               <img
-                src="./favicon/android-chrome-192x192.png"
-                alt="Logo"
-                class="nav-logo"
+                src="images/person.png"
+                alt="Person reflecting"
+                class="w-full max-w-md mx-auto drop-shadow-2xl"
+                loading="lazy"
               />
-              <span class="logo-text">Portfolio</span>
-            </div>
-            <div class="menu-icon-wrapper">
-              <img
-                class="menu-icon"
-                src="images/icons/menu.png"
-                alt="Menu icon"
-              />
-              <span class="menu-text">MENU</span>
-            </div>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#home">Home</a>
-              </li>
-              <li class="nav-item dropdown-parent">
-                <a href="#">Gallery <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-item">
-                    <a href="#">Pictures <i class="fas fa-image"></i></a>
-                    <ul class="sub-dropdown">
-                      <li>
-                        <img
-                          src="images/banner/banner1.png"
-                          alt="Gallery preview"
-                          class="dropdown-img"
-                          loading="lazy"
-                        />
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#">Videos <i class="fas fa-video"></i></a>
-                    <ul class="sub-dropdown video-dropdown">
-                      <li>
-                        <iframe
-                          width="300"
-                          height="200"
-                          src="https://www.youtube.com/embed/ZE58Vt3B3-s"
-                          title="YouTube video player"
-                          frameborder="0"
-                          allow="
-                            accelerometer;
-                            autoplay;
-                            clipboard-write;
-                            encrypted-media;
-                            gyroscope;
-                            picture-in-picture;
-                            web-share;
-                          "
-                          allowfullscreen
-                          loading="lazy"
-                        ></iframe>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-item">
-                    <a href="#about">About Us <i class="fas fa-users"></i></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item"><a href="#plans">Plans</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-search">
-              <i class="fas fa-search"></i>
             </div>
           </div>
-        </nav>
-      </section>
-
-      <!-- My failures of previous year section -->
-      <section class="my-failures" id="about">
-        <div
-          class="failure-image"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          <div class="image-wrapper">
-            <img
-              src="images/person.png"
-              alt="Person reflecting on past failures"
-              class="failure-pic"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div
-          class="my-failures-blog"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        >
-          <div class="section-badge">Lessons Learned</div>
-          <h1 class="failure-title">My failures of previous year</h1>
-          <p class="failure-description">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock.
-          </p>
-          <div class="failure-list">
-            <ul>
-              <li>
-                <i class="fas fa-check-circle"></i> Contrary to popular belief,
-                is not simply.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Contrary to popular belief.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Contrary to popular , is not
-                simply.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Contrary to popular belief,
-                is not simply.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Contrary to popular simply.
-              </li>
-            </ul>
-          </div>
-          <div class="progress-stats">
-            <div class="stat">
-              <span class="stat-number">85%</span>
-              <span class="stat-label">Growth Rate</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">12+</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">500+</span>
-              <span class="stat-label">Hours</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- My Plan Section -->
-      <section class="future-plan" id="plans">
-        <div class="my-plan">
-          <div class="my-plan-title" data-aos="fade-up" data-aos-duration="800">
-            <div class="section-badge">What's Next?</div>
-            <h1>My Plans</h1>
-            <div class="title-underline"></div>
-          </div>
-          <div class="plans">
+          <div
+            class="flex-1"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div
-              class="plan-card"
+              class="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4"
+            >
+              Lessons Learned
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              My failures of previous year
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center gap-3">
+                <i class="fas fa-check-circle text-green-500"></i
+                ><span>Contrary to popular belief, is not simply.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-check-circle text-green-500"></i
+                ><span>Contrary to popular belief.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-check-circle text-green-500"></i
+                ><span>Contrary to popular , is not simply.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-check-circle text-green-500"></i
+                ><span>Contrary to popular belief, is not simply.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-check-circle text-green-500"></i
+                ><span>Contrary to popular simply.</span>
+              </li>
+            </ul>
+            <div
+              class="grid grid-cols-3 gap-4 text-center bg-gray-50 p-5 rounded-2xl"
+            >
+              <div>
+                <span
+                  class="stat-number block text-2xl font-bold text-blue-600"
+                  data-target="85"
+                  >0%</span
+                ><span class="text-gray-500 text-sm">Growth Rate</span>
+              </div>
+              <div>
+                <span
+                  class="stat-number block text-2xl font-bold text-blue-600"
+                  data-target="12"
+                  >0+</span
+                ><span class="text-gray-500 text-sm">Projects</span>
+              </div>
+              <div>
+                <span
+                  class="stat-number block text-2xl font-bold text-blue-600"
+                  data-target="500"
+                  >0+</span
+                ><span class="text-gray-500 text-sm">Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-gray-50" id="plans">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div
+            class="text-center mb-16"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div
+              class="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold px-4 py-1 rounded-full mb-3"
+            >
+              What's Next?
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800">
+              My Plans
+            </h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition text-center group"
               data-aos="fade-up"
-              data-aos-duration="800"
               data-aos-delay="100"
             >
-              <div class="card-icon">
-                <img src="images/icons/web.png" alt="Web Development icon" />
+              <div
+                class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-5 group-hover:bg-blue-100 transition"
+              >
+                <img src="images/icons/web.png" alt="web" class="w-10 h-10" />
               </div>
-              <h3>Web Development</h3>
-              <p>I want to start</p>
-              <div class="card-hover-effect"></div>
+              <h3 class="text-xl font-bold mb-2">Web Development</h3>
+              <p class="text-gray-500">I want to start</p>
             </div>
             <div
-              class="plan-card"
+              class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition text-center group"
               data-aos="fade-up"
-              data-aos-duration="800"
               data-aos-delay="200"
             >
-              <div class="card-icon">
-                <img src="images/icons/js.png" alt="JavaScript icon" />
+              <div
+                class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-5"
+              >
+                <img src="images/icons/js.png" alt="js" class="w-10 h-10" />
               </div>
-              <h3>JavaScript</h3>
-              <p>I want to learn</p>
-              <div class="card-hover-effect"></div>
+              <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+              <p class="text-gray-500">I want to learn</p>
             </div>
             <div
-              class="plan-card"
+              class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition text-center group"
               data-aos="fade-up"
-              data-aos-duration="800"
               data-aos-delay="300"
             >
-              <div class="card-icon">
-                <img src="images/icons/smoke.png" alt="Smoking habit icon" />
+              <div
+                class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-5"
+              >
+                <img
+                  src="images/icons/smoke.png"
+                  alt="smoke"
+                  class="w-10 h-10"
+                />
               </div>
-              <h3>Smoking Habit</h3>
-              <p>I want to end</p>
-              <div class="card-hover-effect"></div>
+              <h3 class="text-xl font-bold mb-2">Smoking Habit</h3>
+              <p class="text-gray-500">I want to end</p>
             </div>
             <div
-              class="plan-card"
+              class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition text-center group"
               data-aos="fade-up"
-              data-aos-duration="800"
               data-aos-delay="400"
             >
-              <div class="card-icon">
-                <img src="images/icons/ecom.png" alt="E-commerce icon" />
+              <div
+                class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-5"
+              >
+                <img src="images/icons/ecom.png" alt="ecom" class="w-10 h-10" />
               </div>
-              <h3>E-commerce</h3>
-              <p>I want to develop</p>
-              <div class="card-hover-effect"></div>
+              <h3 class="text-xl font-bold mb-2">E-commerce</h3>
+              <p class="text-gray-500">I want to develop</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Bottom Banner -->
-      <section class="bottom">
-        <div class="bottom-banner" data-aos="zoom-in" data-aos-duration="1000">
-          <h1 class="bottom-banner-title">Always keep a positive mindset</h1>
-          <button class="btn-main btn-call" aria-label="Call now">
+      <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div
+          class="rounded-2xl p-8 md:p-12 text-white shadow-2xl bg-cover bg-center bg-no-repeat relative"
+          style="
+            background-image:
+              linear-gradient(
+                135deg,
+                rgba(15, 43, 109, 0.8),
+                rgba(0, 255, 115, 0.5)
+              ),
+              url(&quot;images/watch.png&quot;);
+          "
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold max-w-2xl">
+            Always keep a positive mindset
+          </h2>
+          <button
+            id="callNowBtn"
+            class="mt-6 bg-white text-blue-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full shadow-lg transition flex items-center gap-2"
+          >
             Call Now <i class="fas fa-phone-alt"></i>
           </button>
         </div>
       </section>
     </main>
 
-    <!-- Footer section -->
-    <footer id="contact">
-      <div class="footer">
-        <div class="future" data-aos="fade-right" data-aos-duration="800">
-          <h1 class="future-title">Future</h1>
-          <p class="future-description">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words.
-          </p>
-          <p class="future-email">
-            <i class="fas fa-envelope"></i> Email: munna112ru@gmail.com
-          </p>
-          <p class="future-phone">
-            <i class="fas fa-phone"></i> Phone: 01234567890
-          </p>
-
-          <div class="icon">
-            <a
-              href="https://www.facebook.com/muntasir.smm"
-              target="_blank"
-              aria-label="Facebook"
+    <footer id="contact" class="bg-gray-900 text-gray-300 pt-16 pb-6">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row justify-between gap-12">
+          <div class="flex-1" data-aos="fade-right" data-aos-duration="800">
+            <h3 class="text-3xl font-bold text-white mb-4">Future</h3>
+            <p class="max-w-md mb-6 leading-relaxed">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words.
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-envelope mr-3 text-blue-400"></i> Email:
+              munna112ru@gmail.com
+            </p>
+            <p class="mb-6">
+              <i class="fas fa-phone mr-3 text-blue-400"></i> Phone:
+              +8801774085300
+            </p>
+            <div class="flex space-x-5 text-2xl">
+              <a
+                href="https://www.facebook.com/muntasir.smm"
+                target="_blank"
+                class="hover:text-blue-400 transition"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/muntasir_smm/"
+                target="_blank"
+                class="hover:text-pink-400 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://twitter.com/muntasir_smm"
+                target="_blank"
+                class="hover:text-blue-300 transition"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@munna_creation"
+                target="_blank"
+                class="hover:text-red-500 transition"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://github.com/muntasir-smm"
+                target="_blank"
+                class="hover:text-gray-400 transition"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="flex-1" data-aos="fade-left" data-aos-duration="800">
+            <h3 class="text-2xl font-bold text-white mb-4">Subscribe</h3>
+            <p class="mb-4 text-gray-400">
+              Get weekly updates and exclusive content
+            </p>
+            <form action="#" method="post" id="subscribeForm" class="space-y-4">
+              <div class="relative">
+                <input
+                  class="w-full bg-gray-800 border border-gray-700 rounded-full py-3 px-5 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  id="emailInput"
+                />
+                <i
+                  class="fas fa-envelope absolute right-5 top-1/2 -translate-y-1/2 text-gray-500"
+                ></i>
+              </div>
+              <button
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition w-full md:w-auto flex items-center justify-center gap-2"
+                type="submit"
+              >
+                Subscribe <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div
+              id="newsletterSuccess"
+              class="hidden mt-3 text-green-400 text-sm"
             >
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/muntasir_smm/"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://twitter.com/muntasir_smm"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@munna_creation"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="https://github.com/muntasir-smm"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
+              <i class="fas fa-check-circle"></i> Subscribed successfully!
+            </div>
           </div>
         </div>
         <div
-          class="subscribe-section"
-          data-aos="fade-left"
-          data-aos-duration="800"
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm"
         >
-          <h1 class="subscribe-title">Subscribe</h1>
-          <p class="subscribe-text">Get weekly updates and exclusive content</p>
-          <form action="#" method="post" id="subscribeForm">
-            <div class="input-group">
-              <input
-                class="email"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-              <i class="fas fa-envelope input-icon"></i>
-            </div>
-            <div>
-              <button class="btn-subscribe" type="submit">
-                Subscribe <i class="fas fa-paper-plane"></i>
-              </button>
-            </div>
-          </form>
-          <div class="newsletter-success" style="display: none">
-            <i class="fas fa-check-circle"></i> Subscribed successfully!
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
           &copy; 2024 Muntasir SMM. All rights reserved. | Designed with
-          <i class="fas fa-heart"></i> for excellence
-        </p>
+          <i class="fas fa-heart text-red-400"></i> for excellence
+        </div>
       </div>
     </footer>
 
-    <!-- Scripts -->
+    <div
+      id="toast"
+      class="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-full shadow-lg z-50 transition-all duration-300 opacity-0 invisible"
+    ></div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      // Initialize AOS animations
-      AOS.init({
-        once: true,
-        offset: 100,
-      });
-
-      // Loading spinner
-      window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader-wrapper");
-        setTimeout(() => {
-          loader.style.opacity = "0";
-          setTimeout(() => {
-            loader.style.display = "none";
-          }, 500);
-        }, 500);
-      });
-
-      // Back to top button
-      const backToTop = document.getElementById("backToTop");
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          backToTop.classList.add("show");
-        } else {
-          backToTop.classList.remove("show");
-        }
-      });
-
-      backToTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      // Newsletter form submission
-      document
-        .getElementById("subscribeForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const email = this.querySelector(".email").value;
-          if (email) {
-            const successMsg = document.querySelector(".newsletter-success");
-            successMsg.style.display = "block";
-            this.reset();
-            setTimeout(() => {
-              successMsg.style.display = "none";
-            }, 3000);
-          }
-        });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-          }
-        });
-      });
-
-      // Add scroll reveal for elements
-      const revealElements = document.querySelectorAll(".plan-card, .stat");
-      const revealOnScroll = () => {
-        revealElements.forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          const windowHeight = window.innerHeight;
-          if (rect.top < windowHeight - 100) {
-            el.classList.add("revealed");
-          }
-        });
-      };
-      window.addEventListener("scroll", revealOnScroll);
-      revealOnScroll();
-    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
