@@ -1,199 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Assignment</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>First Assignment | Believe & Achieve</title>
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/nav.css">
-</head>
-<body>
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+  </head>
+  <body>
     <header>
-        <div class="banner">
-            <h1 class="title">
-                All Thinks Are <br> Possible If You <br> believe
-            </h1>
-            <p class="title-description">
-                There are many variations of passages of Lorem Ipsum <br> available, but the majority have suffered alteration in some <br> form, by injected humour, or randomised words.
-            </p>
-            <button class="btn-main">
-                Contact Us
-            </button>
+      <div class="banner">
+        <div class="banner-content">
+          <h1 class="title">
+            All Thinks Are <br />
+            Possible If You <br />
+            believe
+          </h1>
+          <p class="title-description">
+            There are many variations of passages of Lorem Ipsum <br />
+            available, but the majority have suffered alteration in some <br />
+            form, by injected humour, or randomised words.
+          </p>
+          <button class="btn-main" aria-label="Contact us">Contact Us</button>
         </div>
+      </div>
     </header>
+
     <main>
-        <!-- This is an extra section -->
-        <!-- Here I made a Menu Section with mouse hovering style -->
-        <section class="extra">
-            <nav>
-                <ul>
-                    <img class="menu-icon" src="images/icons/menu.png" alt=""> 
-                    <li>
-                        MENU
-                        <ul class="dropdown">
-                            <li class="menu-item">
-                                Home
-                            </li>
-                            <li class="menu-item"> Gallery:
-                                <ul class="dropdown">
-                                    <li class="menu-item">
-                                        Picture
-                                        <ul class="dropdown">
-                                            <li class="menu-item">
-                                                <img src="images/banner/banner1.png" alt="" width="300px">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item">
-                                        Video
-                                        <ul class="dropdown">
-                                            <li class="menu-item">
-                                                <iframe width="300" height="200" src="https://www.youtube.com/embed/ZE58Vt3B3-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item">
-                                About Us
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <!-- Extra Section End -->
-
-        <!-- My failures of previous year -->
-        <section class="my-failures">
-            <div>
-                <img src="images/person.png" alt="" class="failure-pic">
+      <!-- EXTRA SECTION: Modern Dropdown Menu with hover effects -->
+      <section class="extra-section">
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-container">
+            <div class="menu-icon-wrapper">
+              <img
+                class="menu-icon"
+                src="images/icons/menu.png"
+                alt="Menu icon"
+              />
+              <span class="menu-text">MENU</span>
             </div>
-            <div class="my-failures-blog">
-                <h1 class="failure-title">
-                    My failures of <br> previous year
-                </h1>
-                <p class="failure-description">
-                    Contrary to popular belief, Lorem Ipsum is not <br> simply random text. It has roots in a piece of <br> classical Latin literature from 45 BC, making it over <br> 2000 years old. Richard McClintock.
-                </p>
-                <p>
-                    <ul>
-                        <li>Contrary to popular belief, is not simply.</li>
-                        <li>Contrary to popular belief.</li>
-                        <li>Contrary to popular , is not simply.</li>
-                        <li>Contrary to popular belief, is not simply.</li>
-                        <li>Contrary to popular simply.</li>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown-parent">
+                <a href="#">Gallery</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#">Pictures</a>
+                    <ul class="sub-dropdown">
+                      <li>
+                        <img
+                          src="images/banner/banner1.png"
+                          alt="Gallery preview"
+                          class="dropdown-img"
+                        />
+                      </li>
                     </ul>
-                </p>
-            </div>
-        </section>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Videos</a>
+                    <ul class="sub-dropdown video-dropdown">
+                      <li>
+                        <iframe
+                          width="300"
+                          height="200"
+                          src="https://www.youtube.com/embed/ZE58Vt3B3-s"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="
+                            accelerometer;
+                            autoplay;
+                            clipboard-write;
+                            encrypted-media;
+                            gyroscope;
+                            picture-in-picture;
+                            web-share;
+                          "
+                          allowfullscreen
+                        ></iframe>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-item"><a href="#">About Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
 
-        <!-- My Plan Section -->
-        <section class="future-plan">
-            <div class="my-plan">
-                <div class="my-plan-title">
-                    <h1>
-                        My Plans
-                    </h1>
-                </div>
-                <div class="plans">
-                    <div>
-                        <img src="images/icons/web.png" alt="WebDev">
-                        <h3>Web Development</h3>
-                        <p>I want to start</p>
-                    </div>
-                    <div>
-                        <img src="images/icons/js.png" alt="JavaScript">
-                        <h3>JavaScript</h3>
-                        <p>I want to learn</p>
-                    </div>
-                    <div>
-                        <img src="images/icons/smoke.png" alt="Smoke">
-                        <h3>Smoking Habit</h3>
-                        <p>I want to end</p>
-                    </div>
-                    <div>
-                        <img src="images/icons/ecom.png" alt="E-com">
-                        <h3>E-commerce</h3>
-                        <p>I want to develope</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- My failures of previous year section - enhanced layout -->
+      <section class="my-failures">
+        <div class="failure-image">
+          <img
+            src="images/person.png"
+            alt="Person reflecting on past failures"
+            class="failure-pic"
+          />
+        </div>
+        <div class="my-failures-blog">
+          <h1 class="failure-title">
+            My failures of <br />
+            previous year
+          </h1>
+          <p class="failure-description">
+            Contrary to popular belief, Lorem Ipsum is not <br />
+            simply random text. It has roots in a piece of <br />
+            classical Latin literature from 45 BC, making it over <br />
+            2000 years old. Richard McClintock.
+          </p>
+          <div class="failure-list">
+            <ul>
+              <li>Contrary to popular belief, is not simply.</li>
+              <li>Contrary to popular belief.</li>
+              <li>Contrary to popular , is not simply.</li>
+              <li>Contrary to popular belief, is not simply.</li>
+              <li>Contrary to popular simply.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Bottom Banner With Image and Gradient -->
-        <section class="bottom">
-            <div class="bottom-banner">
-                <h1 class="bottom-banner-title">
-                    Always keep a positive <br> mindset
-                </h1>
-                <button class="btn-main">
-                    Call Now
-                </button>
+      <!-- My Plan Section - refined spacing and card style -->
+      <section class="future-plan">
+        <div class="my-plan">
+          <div class="my-plan-title">
+            <h1>My Plans</h1>
+          </div>
+          <div class="plans">
+            <div class="plan-card">
+              <img src="images/icons/web.png" alt="Web Development icon" />
+              <h3>Web Development</h3>
+              <p>I want to start</p>
             </div>
-        </section>
+            <div class="plan-card">
+              <img src="images/icons/js.png" alt="JavaScript icon" />
+              <h3>JavaScript</h3>
+              <p>I want to learn</p>
+            </div>
+            <div class="plan-card">
+              <img src="images/icons/smoke.png" alt="Smoking habit icon" />
+              <h3>Smoking Habit</h3>
+              <p>I want to end</p>
+            </div>
+            <div class="plan-card">
+              <img src="images/icons/ecom.png" alt="E-commerce icon" />
+              <h3>E-commerce</h3>
+              <p>I want to develop</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Banner with Gradient and Image Blend -->
+      <section class="bottom">
+        <div class="bottom-banner">
+          <h1 class="bottom-banner-title">
+            Always keep a positive <br />
+            mindset
+          </h1>
+          <button class="btn-main btn-call" aria-label="Call now">
+            Call Now
+          </button>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer section -->
+    <!-- Footer section - fully responsive -->
     <footer>
-        <div class="footer">
-            <div class="future">
-                <h1 class="future-title">
-                    Future
-                </h1>
-                <p class="future-description">
-                    There are many variations of passages of Lorem Ipsum <br> available, but the majority have suffered alteration in some <br> form, by injected humour, or randomised words. 
-                </p>
-                <p class="future-email">
-                    Email: munna112ru@gmail.com
-                </p>
-                <p  class="future-phone">
-                    Phone: 01234567890
-                </p>
+      <div class="footer">
+        <div class="future">
+          <h1 class="future-title">Future</h1>
+          <p class="future-description">
+            There are many variations of passages of Lorem Ipsum <br />
+            available, but the majority have suffered alteration in some <br />
+            form, by injected humour, or randomised words.
+          </p>
+          <p class="future-email">Email: munna112ru@gmail.com</p>
+          <p class="future-phone">Phone: 01234567890</p>
 
-                <!-- Social media Icon with profile link -->
-                <div class="icon">
-                    <div>
-                        <a href="https://www.facebook.com/muntasir.smm" target="_blank">
-                            <img src="images/icons/fb.png" alt="fb">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.instagram.com/muntasir_smm/" target="_blank">
-                            <img src="images/icons/instagram.png" alt="instagram">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/muntasir_smm" target="_blank">
-                            <img src="images/icons/twitter.png" alt="Twitter">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/@munna_creation" target="_blank">
-                            <img src="images/icons/youtube.png" alt="Youtube">
-                        </a>
-                    </div>
-                </div>
-                
+          <!-- Social media icons with profile links -->
+          <div class="icon">
+            <a
+              href="https://www.facebook.com/muntasir.smm"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="images/icons/fb.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/muntasir_smm/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img src="images/icons/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://twitter.com/muntasir_smm"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <img src="images/icons/twitter.png" alt="Twitter" />
+            </a>
+            <a
+              href="https://www.youtube.com/@munna_creation"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <img src="images/icons/youtube.png" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+        <div class="subscribe-section">
+          <h1 class="subscribe-title">Subscribe</h1>
+          <form action="#" method="post">
+            <div>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
             <div>
-                <h1 class="subscribe-title">
-                    Subscribe
-                </h1>
-                <form action="">
-                    <div>
-                        <input class="email" type="email" name="email" id="" placeholder="Enter your email">
-                    </div>
-                    <div>
-                        <button class="btn-subscribe" type="submit">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
+              <button class="btn-subscribe" type="submit">Subscribe</button>
             </div>
+          </form>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
